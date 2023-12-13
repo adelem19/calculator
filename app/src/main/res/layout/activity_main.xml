@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222831"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvShow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/andika"
+        android:gravity="bottom|right"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ptPrim"
+        app:layout_constraintEnd_toEndOf="@+id/ptPrim"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ptPrim"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ptPrim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:fontFamily="@font/andika"
+        android:hint="0"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/main_color_2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bClear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="C"
+                    android:textColor="#222831"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bScobL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="("
+                    android:textColor="#222831"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bScobR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text=")"
+                    android:textColor="#222831"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bDevision"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="/"
+                    android:textColor="#222831"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/bSeven"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="7"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bEight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="8"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bNine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="9"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bMultiply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="*"
+                    android:textColor="#222831"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="4"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="5"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bSix"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="6"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bMinus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="-"
+                    android:textColor="#222831"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="1"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="2"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="3"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bPlus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="+"
+                    android:textColor="#222831"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bResult"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bNull"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="0"
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bCova"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text=","
+                    android:textColor="#393E46"
+                    android:textSize="25dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/bDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="del"
+                    android:textColor="#393E46"
+                    android:textSize="20dp"
+                    app:cornerRadius="0dp" />
+
+                <Button
+                    android:id="@+id/btResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/andika"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="="
+                    android:textColor="#222831"
+
+                    android:textSize="30dp"
+                    app:cornerRadius="0dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
